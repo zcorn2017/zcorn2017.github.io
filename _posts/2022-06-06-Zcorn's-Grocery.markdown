@@ -6,9 +6,7 @@ categories: Sell
 
 ---
 
-# Zcorn's Grocery Store
-
-## 近期因搬宿舍空间不足出售闲置(实时更新)
+# 近期因搬宿舍空间不足出售闲置(实时更新)
 
 > 如果打勾意味着已经出售
 
@@ -21,8 +19,8 @@ categories: Sell
 - [ ] Probability and Statistical Inference 10th ed. （英文版）
 - [ ] Microsoft 蓝牙无线鼠标（黑色）
 
-## 联系方式
+# 联系方式
 
-- 电子邮件：zcorn@zcorn.cn
+- 电子邮件：[zcorn@zcorn.cn](zcorn@zcorn.cn)
 - 微信：zcorn_
 
