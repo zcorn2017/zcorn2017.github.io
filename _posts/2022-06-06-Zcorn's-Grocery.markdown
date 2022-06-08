@@ -21,6 +21,6 @@ categories: Sell
 
 # 联系方式
 
-- 电子邮件：[zcorn@zcorn.cn](zcorn@zcorn.cn)
+- 电子邮件：[zcorn@zcorn.cn](mailto://zcorn@zcorn.cn)
 - 微信：zcorn_
 
