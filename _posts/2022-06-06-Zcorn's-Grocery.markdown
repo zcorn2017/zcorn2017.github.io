@@ -11,12 +11,12 @@ categories: Sell
 > 如果打勾意味着已经出售
 
 - [ ] Surface Pen 5th gen
-- [ ] Suface Go 官方键盘（适用于第1/2/3代）
-- [ ] Besus type-c 数据线 （原价90左右，可充macbook，也可一线通）
-- [ ] Matepad Paper （黑色 4GB 内存 64GB 存储）
+- [x] Suface Go 官方键盘（适用于第1/2/3代）
+- [x] Besus type-c 数据线 （原价90左右，可充macbook，也可一线通）
+- [x] Matepad Paper （黑色 4GB 内存 64GB 存储）
 - [ ] Thomas Calculus in SI Units （博文书店购入）
 - [ ] Boox note2/notepro/nova pro/max2/max3 电磁笔 (买来用在Samsung Chromebook V2上的，只要是wacom第二代技术都可以用)
-- [ ] Probability and Statistical Inference 10th ed. （英文版）
+- [x] Probability and Statistical Inference 10th ed. （英文版）
 - [ ] Microsoft 蓝牙无线鼠标（黑色）
 
 # 联系方式
