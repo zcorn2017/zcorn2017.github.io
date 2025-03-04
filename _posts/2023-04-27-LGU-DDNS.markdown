@@ -2,7 +2,7 @@
 layout: post
 title:  "龙岗大学DDNS访问校园网设备教程"
 date:   2023-04-27 20:54:54 +0800
-categories: Sell
+categories: Tech
 
 ---
 
