@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<!-- This is Zcorn's landfill where he could litter here.  -->
+This is Zcorn's landfill where he could litter here. 
 <!-- One day his friends found this unfinished site and reminded him. 
 Then he picked it up.  -->
 <!-- If you find something stupid on this site or just want to reach this guy. 
