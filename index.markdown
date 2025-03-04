@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+# About me
+
+Hi, I am ZHOU Yuming, who is majoring bioinformatics in my fourth year at the Chinese University of Hong Kong, Shenzhen. For more details, please consult my [resume](/_site/assets/index/ZHOU-YUMING-RESUME.pdf).
