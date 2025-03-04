@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Zcorn's Grocery Store"
-date:   2025-03-05 16:42:32 +0800
+date:   2025-03-04 16:42:32 +0800
 categories: Sell
 
 ---
@@ -18,10 +18,9 @@ categories: Sell
 
 ## 免费区（买任意物品即送）
 
-- [ ] 玩坏台历2025（已拆封）
+- [] 玩坏台历2025（已拆封）
 
 
 # 联系方式
 
 - 微信：zcorn_
-
