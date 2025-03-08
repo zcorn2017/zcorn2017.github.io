@@ -29,7 +29,7 @@ categories: Sell
 - [ ] WEGENE咖啡杯子 - 7
 ![alt text](/assets/sale/qidi/IMG_5636.webp)
 - [ ] 便携显示器（2k60hz,16寸，带vesa转接口，还有皮套，可送线） - 150
-![alt text](7B8D03B3-8F5F-47A6-9478-A2B4553133D3.jpg)
+![alt text](/assets/sale/qidi/7B8D03B3-8F5F-47A6-9478-A2B4553133D3.webp)
 - [ ] 一堆文具（差生文具多是这样的） - 带价来，半卖半送
 ![alt text](/assets/sale/qidi/AA97EA40-7A10-4DFB-95A5-D503DB456EEC.webp)
 - [ ] 折叠床(75cm宽) - 20
