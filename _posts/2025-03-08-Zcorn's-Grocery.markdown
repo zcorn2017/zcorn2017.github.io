@@ -39,11 +39,16 @@ categories: Sell
 #### 祥波D栋
 > 如图所示，半卖半送，最好带价来
 
+- [ ] 小米4A
 ![alt text](/assets/sale/harmonia/1.webp)
+- 
 ![alt text](/assets/sale/harmonia/2.webp)
 ![alt text](/assets/sale/harmonia/3.webp)
 ![alt text](/assets/sale/harmonia/4.webp)
 ![alt text](/assets/sale/harmonia/5.webp)
+![alt text](/assets/sale/harmonia/6.webp)
+![alt text](/assets/sale/harmonia/7.webp)
+![alt text](/assets/sale/harmonia/8.webp)
 
 ### 5月初（具体时间可协商）毕业预售
 - [ ] 德业除湿机（原价1200，5分钟脱水成三体人） - 400
@@ -56,7 +61,7 @@ categories: Sell
 - [ ] Z9Smart人体工学椅（成色佳，有十年京东自营保固）- 200
 ![alt text](/assets/sale/qidi/D9A87152-C983-4FBC-89D9-11535C660E40.webp)
 - [ ] 惠普E253 1080p 24寸 带扩展usb 可升降旋转 - 200
-![alt text](/assets/sale/qidi/IMG_5635.webp)
+![alt text](/assets/sale/qidi/IMG_5664.webp)
 
 ## 免费区（买任意物品即送）
 
