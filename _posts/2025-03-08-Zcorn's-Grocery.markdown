@@ -15,7 +15,7 @@ categories: Sell
 ### 随时提货
 #### 启迪协信8栋
 - [ ] 床上折叠小桌 - 10
-![alt text](/assets/sale/qidi/DCDFE56D-74F6-4E16-9DA5-3B59A176D044.webp)
+![alt text](/assets/sale/qidi/FC7F7828-4744-4EAB-81C8-AC451642E397_1_201_a.webp)
 - [ ] 显示器支架 - 7
 ![alt text](/assets/sale/qidi/IMG_5640.webp)
 - [ ] Switch收纳包（全新） - 5
