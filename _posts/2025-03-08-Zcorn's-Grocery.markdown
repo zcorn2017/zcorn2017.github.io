@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Zcorn's Grocery Store"
+title:  "大四老登临近毕业变卖家产(实时更新)"
 date:   2025-03-08 13:42:32 +0800
 categories: Sell
 
 ---
 
-# 大四老登临近毕业变卖家产(实时更新)
+
 
 > 如果打勾意味着已经出售
 
-## 出售区
+# 出售区
 
-### 随时提货
-#### 启迪协信8栋
+## 随时提货
+### 启迪协信8栋
 - [ ] 床上折叠小桌 - 10
 ![alt text](/assets/sale/qidi/FC7F7828-4744-4EAB-81C8-AC451642E397_1_201_a.webp)
 - [ ] 显示器支架 - 7
@@ -37,7 +37,7 @@ categories: Sell
 - [ ] 天然乳胶床垫（原来用于祥波宿舍床）- 50
 ![alt text](/assets/sale/qidi/IMG_5663.webp)
 
-#### 祥波D栋
+### 祥波D栋
 > 如图所示，半卖半送，最好带价来
 
 - 小米4A
@@ -48,10 +48,10 @@ categories: Sell
 ![alt text](/assets/sale/harmonia/5.webp)
 ![alt text](/assets/sale/harmonia/6.webp)
 ![alt text](/assets/sale/harmonia/7.webp)
-   还剩两罐午餐肉
+- 还剩两罐午餐肉
 ![alt text](/assets/sale/harmonia/8.webp)
 
-### 5月初（具体时间可协商）毕业预售
+## 5月初（具体时间可协商）毕业预售
 - [ ] 德业除湿机（原价1200，5分钟脱水成三体人） - 400
 ![alt text](/assets/sale/qidi/IMG_5644.webp)
 - [ ] 爱普生L6168打印复印一体机（全彩喷墨），送半瓶原装黑色墨水 - 1000
@@ -64,7 +64,7 @@ categories: Sell
 - [ ] 惠普E253 1080p 24寸 带扩展usb 可升降旋转 - 200
 ![alt text](/assets/sale/qidi/IMG_5664.webp)
 
-## 免费区（买任意物品即送）
+# 免费区（买任意物品即送）
 
 - [ ] 玩坏台历2025（已拆封，学校送的）
 
