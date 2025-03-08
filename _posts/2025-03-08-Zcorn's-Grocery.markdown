@@ -59,7 +59,7 @@ categories: Sell
 ![alt text](/assets/sale/qidi/DCDFE56D-74F6-4E16-9DA5-3B59A176D044.webp)
 - [x] 多层抽屉 - 10
 ![alt text](/assets/sale/qidi/850EB463-7752-418E-AD53-AFACA05F6A23_1_201_a.webp)
-- [ ] Z9Smart人体工学椅（成色佳，有十年京东自营保固）- 200
+- [x] Z9Smart人体工学椅（成色佳，有十年京东自营保固）- 200
 ![alt text](/assets/sale/qidi/D9A87152-C983-4FBC-89D9-11535C660E40.webp)
 - [x] 惠普E253 1080p 24寸 带扩展usb 可升降旋转 - 200
 ![alt text](/assets/sale/qidi/IMG_5664.webp)
