@@ -39,15 +39,15 @@ categories: Sell
 #### 祥波D栋
 > 如图所示，半卖半送，最好带价来
 
-- [ ] 小米4A
+- 小米4A
 ![alt text](/assets/sale/harmonia/1.webp)
-- 
 ![alt text](/assets/sale/harmonia/2.webp)
 ![alt text](/assets/sale/harmonia/3.webp)
 ![alt text](/assets/sale/harmonia/4.webp)
 ![alt text](/assets/sale/harmonia/5.webp)
 ![alt text](/assets/sale/harmonia/6.webp)
 ![alt text](/assets/sale/harmonia/7.webp)
+   还剩两罐午餐肉
 ![alt text](/assets/sale/harmonia/8.webp)
 
 ### 5月初（具体时间可协商）毕业预售
