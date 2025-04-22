@@ -6,4 +6,4 @@ layout: home
 ---
 
 Hi, I am ZHOU Yuming, who is majoring bioinformatics in my fourth year at the Chinese University of Hong Kong, Shenzhen. I am also an incoming PhD student in Plant Biology at the University of Illinois, Urbana-Champaign.
-For more details, please consult my [resume](/assets/ZHOU-YUMING-RESUME.pdf).
+<!-- For more details, please consult my [resume](/assets/ZHOU-YUMING-RESUME.pdf). -->
