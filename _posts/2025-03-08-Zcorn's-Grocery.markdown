@@ -44,7 +44,7 @@ categories: Sell
 ![alt text](/assets/sale/qidi/DCDFE56D-74F6-4E16-9DA5-3B59A176D044.webp)
 - [ ] 多层抽屉 - 10
 ![alt text](/assets/sale/qidi/850EB463-7752-418E-AD53-AFACA05F6A23_1_201_a.webp)
-- [ ] Z9Smart人体工学椅（成色佳，有十年京东自营保固）- 200
+- [ ] Z9Smart人体工学椅（成色佳，有十年京东自营保固）- 250
 ![alt text](/assets/sale/qidi/D9A87152-C983-4FBC-89D9-11535C660E40.webp)
 
 - [ ] BenQ PD2506Q 25寸显示器 2k 60hz HDR 400 Type-C 供电 - 1500
