@@ -26,25 +26,20 @@ categories: Sell
 ![alt text](/assets/sale/qidi/IMG_5636.webp)
 - [ ] 一堆文具（差生文具多是这样的） - 带价来，半卖半送
 ![alt text](/assets/sale/qidi/AA97EA40-7A10-4DFB-95A5-D503DB456EEC.webp)
-![alt text](/assets/sale/qidi/IMG_5663.webp)
+
 
 ### 祥波D栋
 > 如图所示，半卖半送，最好带价来
-
-- 小米4A
-![alt text](/assets/sale/harmonia/1.webp)
 ![alt text](/assets/sale/harmonia/2.webp)
-![alt text](/assets/sale/harmonia/3.webp)
-![alt text](/assets/sale/harmonia/4.webp)
 ![alt text](/assets/sale/harmonia/5.webp)
 ![alt text](/assets/sale/harmonia/6.webp)
 ![alt text](/assets/sale/harmonia/7.webp)
 
 
 ## 5月初（具体时间可协商）毕业预售
-- [ ] 德业除湿机（原价1200，5分钟脱水成三体人） - 400
+- [ ] 德业除湿机（原价1200，5分钟脱水成三体人） - 300
 ![alt text](/assets/sale/qidi/IMG_5644.webp)
-- [ ] 爱普生L6168打印复印一体机（全彩喷墨），送半瓶原装黑色墨水 - 1000
+- [ ] 爱普生L6168打印复印一体机（全彩喷墨），送半瓶原装黑色墨水 - 800
 ![alt text](/assets/sale/qidi/9F5780A4-2A65-4A9B-93F7-86F04B55C3AF.webp)
 ![alt text](/assets/sale/qidi/DCDFE56D-74F6-4E16-9DA5-3B59A176D044.webp)
 - [ ] 多层抽屉 - 10
@@ -52,8 +47,9 @@ categories: Sell
 - [ ] Z9Smart人体工学椅（成色佳，有十年京东自营保固）- 200
 ![alt text](/assets/sale/qidi/D9A87152-C983-4FBC-89D9-11535C660E40.webp)
 
+- [ ] BenQ PD2506Q 25寸显示器 2k 60hz HDR 400 Type-C 供电 - 1500
+
+![alt text](/assets/sale/qidi/IMG_6642.webp) 
+![alt text](/assets/sale/qidi/IMG_6643.webp)
 
 # 免费区（买任意物品即送）
-
-
-
