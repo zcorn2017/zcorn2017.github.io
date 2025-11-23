@@ -1,0 +1,127 @@
+{{- /* Parse BibTeX file and return publications data */ -}}
+{{- $bibContent := readFile "assets/MyPub.bib" -}}
+{{- $publications := slice -}}
+
+{{- /* Split by @ to get each entry */ -}}
+{{- $entries := split $bibContent "@" -}}
+
+{{- range $entries -}}
+  {{- if and . (or (hasPrefix . "article") (hasPrefix . "online")) -}}
+    {{- $pub := dict -}}
+    
+    {{- /* Extract the citation key and content */ -}}
+    {{- $content := . -}}
+    
+    {{- /* Extract title - handles nested braces */ -}}
+    {{- $titleRegex := "title\\s*=\\s*\\{(.+?)\\}[,\\s]*\\n" -}}
+    {{- if findRE $titleRegex $content -}}
+      {{- $titleMatch := index (findRE $titleRegex $content) 0 -}}
+      {{- $title := replaceRE "title\\s*=\\s*\\{" "" $titleMatch -}}
+      {{- $title = replaceRE "\\}[,\\s]*\\n.*" "" $title -}}
+      {{- /* Remove all double braces */ -}}
+      {{- $title = replace $title "{{" "" -}}
+      {{- $title = replace $title "}}" "" -}}
+      {{- /* Remove remaining single braces */ -}}
+      {{- $title = replace $title "{" "" -}}
+      {{- $title = replace $title "}" "" -}}
+      {{- $pub = merge $pub (dict "title" (trim $title " ,")) -}}
+    {{- end -}}
+    
+    {{- /* Extract author */ -}}
+    {{- if findRE "author\\s*=\\s*\\{([^}]+)\\}" $content -}}
+      {{- $authorMatch := index (findRE "author\\s*=\\s*\\{([^}]+)\\}" $content) 0 -}}
+      {{- $authorStr := replaceRE "author\\s*=\\s*\\{" "" $authorMatch -}}
+      {{- $authorStr = replaceRE "\\}.*" "" $authorStr -}}
+      {{- $authors := split $authorStr " and " -}}
+      {{- $cleanAuthors := slice -}}
+      {{- range $authors -}}
+        {{- $cleanAuthors = $cleanAuthors | append (trim . " ") -}}
+      {{- end -}}
+      {{- $pub = merge $pub (dict "authors" $cleanAuthors) -}}
+    {{- end -}}
+    
+    {{- /* Extract journal/journaltitle */ -}}
+    {{- $journal := "" -}}
+    {{- if findRE "journaltitle\\s*=\\s*\\{([^}]+)\\}" $content -}}
+      {{- $journalMatch := index (findRE "journaltitle\\s*=\\s*\\{([^}]+)\\}" $content) 0 -}}
+      {{- $journal = replaceRE "journaltitle\\s*=\\s*\\{" "" $journalMatch -}}
+      {{- $journal = replaceRE "\\}.*" "" $journal -}}
+    {{- else if findRE "journal\\s*=\\s*\\{([^}]+)\\}" $content -}}
+      {{- $journalMatch := index (findRE "journal\\s*=\\s*\\{([^}]+)\\}" $content) 0 -}}
+      {{- $journal = replaceRE "journal\\s*=\\s*\\{" "" $journalMatch -}}
+      {{- $journal = replaceRE "\\}.*" "" $journal -}}
+    {{- end -}}
+    {{- /* If no journal found and it's an online entry, use "Preprint" or check for eprint */ -}}
+    {{- if not $journal -}}
+      {{- if hasPrefix . "online" -}}
+        {{- $journal = "arXiv preprint" -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if $journal -}}
+      {{- $pub = merge $pub (dict "journal" (trim $journal " ,")) -}}
+    {{- end -}}
+    
+    {{- /* Extract year/date */ -}}
+    {{- $year := "" -}}
+    {{- if findRE "year\\s*=\\s*\\{?([0-9]+)" $content -}}
+      {{- $yearMatch := index (findRE "year\\s*=\\s*\\{?([0-9]+)" $content) 0 -}}
+      {{- $year = replaceRE "year\\s*=\\s*\\{?" "" $yearMatch -}}
+      {{- $year = replaceRE "[^0-9].*" "" $year -}}
+    {{- else if findRE "date\\s*=\\s*\\{?([0-9]+)" $content -}}
+      {{- $dateMatch := index (findRE "date\\s*=\\s*\\{?([0-9]+)" $content) 0 -}}
+      {{- $year = replaceRE "date\\s*=\\s*\\{?" "" $dateMatch -}}
+      {{- $year = replaceRE "[^0-9].*" "" $year -}}
+    {{- end -}}
+    {{- if $year -}}
+      {{- $pub = merge $pub (dict "year" $year) -}}
+    {{- end -}}
+    
+    {{- /* Extract DOI */ -}}
+    {{- if findRE "doi\\s*=\\s*\\{([^}]+)\\}" $content -}}
+      {{- $doiMatch := index (findRE "doi\\s*=\\s*\\{([^}]+)\\}" $content) 0 -}}
+      {{- $doi := replaceRE "doi\\s*=\\s*\\{" "" $doiMatch -}}
+      {{- $doi = replaceRE "\\}.*" "" $doi -}}
+      {{- $pub = merge $pub (dict "doi" (trim $doi " ,")) -}}
+    {{- end -}}
+    
+    {{- /* Extract URL */ -}}
+    {{- if findRE "url\\s*=\\s*\\{([^}]+)\\}" $content -}}
+      {{- $urlMatch := index (findRE "url\\s*=\\s*\\{([^}]+)\\}" $content) 0 -}}
+      {{- $url := replaceRE "url\\s*=\\s*\\{" "" $urlMatch -}}
+      {{- $url = replaceRE "\\}.*" "" $url -}}
+      {{- $pub = merge $pub (dict "url" (trim $url " ,")) -}}
+    {{- end -}}
+    
+    {{- /* Extract volume */ -}}
+    {{- if findRE "volume\\s*=\\s*\\{([^}]+)\\}" $content -}}
+      {{- $volumeMatch := index (findRE "volume\\s*=\\s*\\{([^}]+)\\}" $content) 0 -}}
+      {{- $volume := replaceRE "volume\\s*=\\s*\\{" "" $volumeMatch -}}
+      {{- $volume = replaceRE "\\}.*" "" $volume -}}
+      {{- $pub = merge $pub (dict "volume" (trim $volume " ,")) -}}
+    {{- end -}}
+    
+    {{- /* Extract number */ -}}
+    {{- if findRE "number\\s*=\\s*\\{([^}]+)\\}" $content -}}
+      {{- $numberMatch := index (findRE "number\\s*=\\s*\\{([^}]+)\\}" $content) 0 -}}
+      {{- $number := replaceRE "number\\s*=\\s*\\{" "" $numberMatch -}}
+      {{- $number = replaceRE "\\}.*" "" $number -}}
+      {{- $pub = merge $pub (dict "number" (trim $number " ,")) -}}
+    {{- end -}}
+    
+    {{- /* Extract pages */ -}}
+    {{- if findRE "pages\\s*=\\s*\\{([^}]+)\\}" $content -}}
+      {{- $pagesMatch := index (findRE "pages\\s*=\\s*\\{([^}]+)\\}" $content) 0 -}}
+      {{- $pages := replaceRE "pages\\s*=\\s*\\{" "" $pagesMatch -}}
+      {{- $pages = replaceRE "\\}.*" "" $pages -}}
+      {{- $pub = merge $pub (dict "pages" (trim $pages " ,")) -}}
+    {{- end -}}
+    
+    {{- /* Only add if we have at least title and authors */ -}}
+    {{- if and (index $pub "title") (index $pub "authors") -}}
+      {{- $publications = $publications | append $pub -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $publications -}}
+

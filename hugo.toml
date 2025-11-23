@@ -1,0 +1,19 @@
+baseURL = 'https://about.zcorn.cn/'
+languageCode = 'en-us'
+title = 'Yuming Zhou'
+
+[params]
+author = "Yuming Zhou"
+description = "PhD Student in Plant Biology"
+googleScholar = "https://scholar.google.com/citations?hl=en&user=_S7iDL8AAAAJ"
+email = "yumingz5@illinois.edu"
+github = "https://github.com/zcorn2017"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
