@@ -116,6 +116,16 @@
       {{- $pub = merge $pub (dict "pages" (trim $pages " ,")) -}}
     {{- end -}}
     
+    {{- /* Preserve article numbers and publication status from the CV. */ -}}
+    {{- range slice "eid" "note" -}}
+      {{- $field := . -}}
+      {{- $pattern := printf "(?m)^\\s*%s\\s*=\\s*\\{([^}]+)\\}" $field -}}
+      {{- with findRE $pattern $content -}}
+        {{- $value := replaceRE $pattern "$1" (index . 0) -}}
+        {{- $pub = merge $pub (dict $field $value) -}}
+      {{- end -}}
+    {{- end -}}
+
     {{- /* Only add if we have at least title and authors */ -}}
     {{- if and (index $pub "title") (index $pub "authors") -}}
       {{- $publications = $publications | append $pub -}}

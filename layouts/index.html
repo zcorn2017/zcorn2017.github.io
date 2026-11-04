@@ -12,6 +12,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="{{ .Site.Params.description }}">
 	<meta name="google-site-verification" content="AvIrwwM3pUmRcqRIW7yyTtEMABks111pFQIFnUyaWt4" />
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -22,12 +23,18 @@
 	<title>{{ .Site.Title }}</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" aria-label="Main navigation">
 		<a class="navbar-brand" href="#Home">{{ .Site.Title }}</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 		<div class="collapse navbar-collapse" id="navbarToggle">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
 					<a class="nav-link" href="#Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Research">Research</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#Publications">Publications</a>
@@ -35,17 +42,24 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#News">News</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Teaching">Teaching</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/resume.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
 
-	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+	<main id="Home">
+	<div class="container site-container">
 		<div class="row">
-			<div class="col-md-3" style="padding-right: 40px; padding-top: 25px;">
-				<img class="img-responsive img-rounded" src="/images/profile.jpg" alt="Yuming Zhou" style="max-width: 220px; border: 1px solid black;"><br>
+			<div class="col-lg-3 profile-column">
+				<img class="img-fluid img-rounded profile-photo" src="/images/profile.jpg" alt="Yuming Zhou"><br>
 			</div>
-			<div class="col-md-5" style="padding-right: 40px; padding-top: 25px;">
-				<h2>Yuming Zhou</h2>
+			<div class="col-lg-5 profile-column">
+				<h1 class="profile-name">Yuming Zhou</h1>
 				<p>
 					PhD Student <br>
 					Plant Biology <br>
@@ -53,15 +67,17 @@
 					Email: yumingz5 [at] illinois (dot) edu <br><br>
 					<a href="{{ .Site.Params.googleScholar }}" target="_blank">Google Scholar</a> /
 					<a href="{{ .Site.Params.github }}" target="_blank">GitHub</a> /
-					<a href="/resume.pdf" target="_blank">CV</a>
+					<a href="/resume.pdf" target="_blank" rel="noopener noreferrer">CV (full version)</a>
 				</p>
 			</div>
-			<div class="col-md-4" style="padding-right: 40px; padding-top: 25px">
-				<font color="black"><b>Research Interests:</b><br>
-					<a>Computational Biology</a> <br>
-					<a>Protein-DNA Interactions</a> <br>
-					<a>Large Language Models</a>
-				</font>
+			<div class="col-lg-4 profile-column">
+				<b>Research Interests:</b>
+				<ul class="list-unstyled research-interests">
+					<li>Protein–DNA Interactions</li>
+					<li>Biological Language Models</li>
+					<li>Transcription Factor Engineering</li>
+					<li>Computational Biology</li>
+				</ul>
 			</div>
 		</div>
 			
@@ -72,8 +88,15 @@
 			I am a PhD student in Plant Biology at <a href="https://illinois.edu/" target="_blank">University of Illinois Urbana-Champaign</a>, 
 			working under the supervision of <a href="https://sib.illinois.edu/directory/profile/leakey" target="_blank">Prof. Andrew Leakey</a> and 
 			<a href="https://chbe.illinois.edu/people/profile/diwakar" target="_blank">Prof. Diwakar Shukla</a>. 
-			My research focuses on protein-DNA interactions using computational methods. I hold a BSc (1st Class Hons) in Bioinformatics from 
-			<a href="https://www.cuhk.edu.cn/en" target="_blank">the Chinese University of Hong Kong, Shenzhen</a>. 
+			I develop protein–DNA language models and computational methods for engineering transcription factors, with a focus on
+			<i>WRINKLED1</i> (WRI1), DNA-binding specificity, and protein stability.
+			</p>
+			<p>
+			I received a BSc (Hons) in Bioinformatics with First Class Honors from
+			<a href="https://www.cuhk.edu.cn/en" target="_blank">The Chinese University of Hong Kong, Shenzhen</a> in 2025
+			and participated in the Global Visiting Program at the University of North Carolina at Chapel Hill in 2023.
+			Previously, I worked on DNA language model benchmarking at BioMAP and on SCOPE-DTI, miRStart 2.0,
+			and a traditional Chinese medicine database in Prof. Hsien-Da Huang’s group.
 			</p>
 			<p>
 			<b>My Profiles:</b>
@@ -85,11 +108,15 @@
 		</div>
 	</div><br>
 
+	{{ partial "cv-section.html" (dict "id" "Education" "title" "Education" "entries" .Site.Data.cv.education) }}
+	{{ partial "cv-section.html" (dict "id" "Research" "title" "Research & Work Experience" "entries" .Site.Data.cv.research) }}
+	{{ partial "cv-section.html" (dict "id" "Funding" "title" "Research Funding & Computational Allocations" "entries" .Site.Data.cv.funding) }}
+
 	<!-- Publications -->
-	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
-		<h3 id="Publications" style="padding-top: 80px; margin-top: -80px;">
+	<section class="container site-container" aria-labelledby="Publications">
+		<h3 id="Publications" class="section-heading">
 			Publications
-			<span style="float:right;"><a href="{{ .Site.Params.googleScholar }}">[Google Scholar]</a></span>
+			<span class="section-link"><a href="{{ .Site.Params.googleScholar }}">[Google Scholar]</a></span>
 		</h3>
 		<hr>
 		{{ $publications := partial "parse-bibtex.html" . }}
@@ -107,17 +134,18 @@
 				{{- if ne $index (sub (len $authors) 1) }}, {{ end -}}
 			{{ end }}
 			<br>
-			<b>{{ .journal }}</b>{{ if .volume }}, Vol. {{ .volume }}{{ end }}{{ if .number }}({{ .number }}){{ end }}{{ if .pages }}, pp. {{ .pages }}{{ end }} ({{ .year }}) <br>
+			<b>{{ .journal }}</b>{{ if .volume }}, Vol. {{ .volume }}{{ end }}{{ if .number }}({{ .number }}){{ end }}{{ if .pages }}, pp. {{ .pages }}{{ end }}{{ if .eid }}, Article {{ .eid }}{{ end }} ({{ .year }}){{ with .note }} · {{ . }}{{ end }} <br>
 			{{ if .doi }}<a href="https://doi.org/{{ .doi }}" target="_blank"> <small>[Paper]</small></a>{{ end }}
 			{{ if .url }}<a href="{{ .url }}" target="_blank"> <small>[Link]</small></a>{{ end }}
 			</div>
 		</div><hr>
 		{{ end }}
-	</div><br>
+		<p class="publication-note"><sup>†</sup> Equal contribution.</p>
+	</section>
 
 	<!-- News/Blog Section -->
-	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
-		<h3 id="News" style="padding-top: 80px; margin-top: -80px;">News & Updates</h3>
+	<section class="container site-container" aria-labelledby="News">
+		<h3 id="News" class="section-heading">News & Updates</h3>
 		<ul>
 		{{ range first 10 (where .Site.RegularPages "Section" "news") }}
 			<li>
@@ -127,20 +155,35 @@
 			</li>
 		{{ end }}
 		</ul>
-	</div><br>
+	</section>
+
+	{{ partial "cv-section.html" (dict "id" "Teaching" "title" "Teaching & Mentoring" "entries" .Site.Data.cv.teaching) }}
 
 	<!-- Honors -->
-	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
-		<h3 id="Honors" style="padding-top: 80px; margin-top: -80px;">Selected Honors</h3>
-		<ul>
-			<li>Outstanding Research Pioneer Award, School of Medicine, CUHK-SZ, 2025</li>
-			<li>KUNPENG Academic Award (Scholarship of 10,000 CNY), School of Medicine, CUHK-SZ, 2025</li>
-			<li>Dean's List (3 consecutive years), School of Medicine, CUHK-SZ, 2021-2024</li>
-			<li>Gold Medal Supervising in iGEM Competition, 2024</li>
-			<li>iGEM Gold Medals (6) and Silver Medal (1) as Advisor, High School Track, 2022-2023</li>
-			<li>Undergraduate Research Award, CUHK-SZ, 2023</li>
+	<section class="container site-container" aria-labelledby="Honors">
+		<h3 id="Honors" class="section-heading">Honors & Awards</h3>
+		<ul class="honors-list">
+			{{ range .Site.Data.cv.honors }}
+			<li>{{ .description }} <span class="cv-entry-dates">({{ .dates }})</span></li>
+			{{ end }}
 		</ul>
-	</div><br>
+	</section>
+
+	<section class="container site-container" aria-labelledby="Skills">
+		<h3 id="Skills" class="section-heading">Skills</h3>
+		<hr>
+		<dl class="skills-grid">
+			{{ range .Site.Data.cv.skills }}
+			<div>
+				<dt>{{ .title }}</dt>
+				<dd>{{ .description }}</dd>
+			</div>
+			{{ end }}
+		</dl>
+	</section>
+
+	{{ partial "cv-section.html" (dict "id" "Service" "title" "Service & Leadership" "entries" .Site.Data.cv.service) }}
+	</main>
 
 	<!-- Contact -->
 	<div class="container">

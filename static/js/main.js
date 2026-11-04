@@ -17,5 +17,16 @@ function showPubs(mode) {
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
   showPubs(0);
+
+  // Close the mobile menu after choosing a section so it does not cover it.
+  const navigation = document.getElementById('navbarToggle');
+  const toggle = document.querySelector('.navbar-toggler');
+  if (navigation && toggle) {
+    navigation.addEventListener('click', function(event) {
+      if (event.target.closest('a') && toggle.getAttribute('aria-expanded') === 'true') {
+        toggle.click();
+      }
+    });
+  }
 });
 

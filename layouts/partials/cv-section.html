@@ -1,0 +1,17 @@
+<section class="container site-container cv-section" aria-labelledby="{{ .id }}">
+	<h3 id="{{ .id }}" class="section-heading">{{ .title }}</h3>
+	<hr>
+	{{ range .entries }}
+	<div class="cv-entry">
+		<h4 class="cv-entry-title">{{ .title }}</h4>
+		<p class="cv-entry-meta">{{ .organization }}{{ with .dates }} <span class="cv-entry-dates">· {{ . }}</span>{{ end }}</p>
+		{{ with .description }}<p>{{ . }}</p>{{ end }}
+		{{ with .details }}
+		<ul>
+			{{ range . }}<li>{{ . }}</li>{{ end }}
+		</ul>
+		{{ end }}
+		{{ if .link }}<p><a href="{{ .link }}" target="_blank" rel="noopener noreferrer">{{ .link_label }}</a></p>{{ end }}
+	</div>
+	{{ end }}
+</section>

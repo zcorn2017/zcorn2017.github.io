@@ -38,6 +38,100 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.site-container {
+  width: 100%;
+  max-width: 1080px;
+  padding-top: 20px;
+  font-size: 17px;
+}
+
+.profile-column {
+  padding-top: 25px;
+}
+
+.profile-photo {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.profile-name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.research-interests {
+  margin-top: 0.5rem;
+}
+
+.section-heading {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.section-link {
+  float: right;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.cv-entry {
+  margin-bottom: 1.75rem;
+}
+
+.cv-entry-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.cv-entry-meta,
+.cv-entry-dates,
+.publication-note {
+  color: #555;
+}
+
+.cv-entry-meta {
+  font-size: 0.95rem;
+}
+
+.cv-entry p {
+  margin-bottom: 0.5rem;
+}
+
+.cv-entry ul,
+.honors-list {
+  padding-left: 1.25rem;
+}
+
+.cv-entry li,
+.honors-list li {
+  margin-bottom: 0.4rem;
+}
+
+.publication-note {
+  font-size: 0.9rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 2rem;
+}
+
+@media (max-width: 575px) {
+  .section-link {
+    display: block;
+    float: none;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 footer {
   color: #666;
   font-size: 14px;

@@ -1,0 +1,172 @@
+# Content adapted from the long CV, cv_banking_full_original.tex.
+
+[[education]]
+dates = "Aug 2025–Present"
+title = "PhD in Plant Biology"
+organization = "University of Illinois Urbana-Champaign"
+description = "Focus: protein–DNA interaction prediction. Advisors: Prof. Andrew Leakey and Prof. Diwakar Shukla."
+
+[[education]]
+dates = "Sep 2021–Jul 2025"
+title = "BSc (Hons) in Bioinformatics, First Class Honors"
+organization = "The Chinese University of Hong Kong, Shenzhen"
+
+[[education]]
+dates = "Aug 2023–Dec 2023"
+title = "Global Visiting Program"
+organization = "University of North Carolina at Chapel Hill"
+
+[[research]]
+dates = "Aug 2025–Present"
+title = "Research Assistantship · Protein–DNA Language Models & Transcription Factor Engineering"
+organization = "Andrew Leakey & Diwakar Shukla groups, University of Illinois Urbana-Champaign"
+details = [
+  "Developing a compositional protein–DNA language model by aligning protein and DNA models through cross-attention.",
+  "Curating structural and in vitro binding datasets, including negative sampling, deduplication, and train/validation/test splits.",
+  "Optimizing WRINKLED1 (WRI1) variants for AW-box specificity, binding ΔΔG, and protein stability."
+]
+
+[[research]]
+dates = "Jun 2025–Aug 2025"
+title = "Algorithm Internship · DNA Language Models"
+organization = "BioMAP · Beijing, China"
+description = "Curated DNA and protein datasets and benchmarks, developed a large-scale evaluation pipeline for xTrimoDNA, mambaDNA, EVO, and other DNA language models, and performed model delivery testing."
+
+[[research]]
+dates = "Apr 2024–Oct 2025"
+title = "Research Internship · SCOPE-DTI"
+organization = "Hsien-Da Huang group, CUHK-Shenzhen"
+description = "Contributed to semi-inductive drug–target interaction prediction through multi-source dataset curation, machine learning model evaluation across prediction scenarios, and development of a Flask web interface and REST APIs."
+
+[[research]]
+dates = "Apr 2024–Sep 2024"
+title = "Research Internship · miRStart 2.0"
+organization = "Hsien-Da Huang group, CUHK-Shenzhen"
+description = "Contributed to a database for microRNA transcription start site identification and transcription factor regulation analysis, and benchmarked the model against existing tools."
+
+[[research]]
+dates = "Jun 2023–Dec 2023"
+title = "Student-led Research · Aptamer-based Norovirus Detection"
+organization = "Collaboration with Imperial College London students · Remote"
+description = "Screened aptamer candidates for a lateral flow test using SELEX and a computational workflow with NSP and HADDOCK."
+
+[[research]]
+dates = "Apr 2023–Nov 2024"
+title = "Research Internship · Traditional Chinese Medicine Database"
+organization = "Hsien-Da Huang group, CUHK-Shenzhen"
+description = "Collected and curated over 22,000 ingredients and 19,000 interactions using web crawlers and existing databases. Supported by the Undergraduate Research Awards program."
+
+[[funding]]
+dates = "2026"
+title = "Fast Protein–DNA Contact Predictors for Plant Gene Regulation"
+organization = "ACCESS-CI Explore Allocation · BIO260641"
+description = "Principal Investigator. Supported by NSF-funded ACCESS-CI high-performance computing resources."
+
+[[teaching]]
+title = "Tutorial Instructor · CURIE Camp"
+organization = "University of Illinois Urbana-Champaign"
+description = "Led a Foldit tutorial for high school students."
+link = "https://wyse.grainger.illinois.edu/summer-programs/summer-camps/curie-camp"
+link_label = "CURIE Camp"
+
+[[teaching]]
+dates = "Apr 2025–Oct 2025"
+title = "Secondary Principal Investigator · iGEM"
+organization = "CUHK-Shenzhen"
+description = "Supervised the undergraduate iGEM team with primary PI Dr. Zhi Ping. The team earned a Gold Medal in 2025."
+link = "https://teams.igem.org/5926"
+link_label = "CUHK-Shenzhen team"
+
+[[teaching]]
+dates = "Sep 2024–Dec 2024"
+title = "Undergraduate Student Teaching Fellow"
+organization = "CUHK-Shenzhen"
+description = "Led tutorials and office hours for Organic Chemistry and Biomolecules, graded assignments and exams, and supported course administration."
+
+[[teaching]]
+dates = "Jun 2024–Oct 2024"
+title = "Advisor · iGEM"
+organization = "Imperial College London · Remote"
+description = "Advised the undergraduate iGEM team, which earned a Gold Medal in 2024."
+link = "https://teams.igem.org/5416"
+link_label = "Imperial College team"
+
+[[teaching]]
+dates = "Jun 2023–Jun 2024"
+title = "Lecturer · iGEM Wiki Development"
+organization = "Shanghai Renascence Biotechnology Co., Ltd. · Remote"
+description = "Delivered workshops and coached teams on iGEM wiki website development."
+
+[[teaching]]
+dates = "Sep 2022–May 2023"
+title = "Student Help Room Preceptor"
+organization = "CUHK-Shenzhen"
+description = "Tutored General Chemistry, Introduction to Computer Science: Programming Methodology, and Computational Laboratory through walk-in meetings."
+
+[[honors]]
+dates = "2025"
+description = "iGEM Gold Medal, undergraduate track, as secondary PI"
+
+[[honors]]
+dates = "2025"
+description = "Outstanding Research Pioneer Award, School of Medicine, CUHK-Shenzhen"
+
+[[honors]]
+dates = "2025"
+description = "KUNPENG Academic Award (10,000 CNY scholarship), School of Medicine, CUHK-Shenzhen"
+
+[[honors]]
+dates = "2024"
+description = "iGEM Gold Medal, undergraduate track, as advisor"
+
+[[honors]]
+dates = "2022–2023"
+description = "Six iGEM Gold Medals and two Silver Medals, advising high school teams"
+
+[[honors]]
+dates = "Apr & Aug 2023"
+description = "Undergraduate Research Awards for the Traditional Chinese Medicine Database project, CUHK-Shenzhen"
+
+[[honors]]
+dates = "2021–2024"
+description = "Dean’s List for three consecutive academic years, School of Medicine, CUHK-Shenzhen"
+
+[[honors]]
+dates = "2019"
+description = "Innovative Award, Mobile Application Innovation Contest, Apple"
+
+[[skills]]
+title = "Programming & Data Analysis"
+description = "Python, R, NumPy, Pandas, machine learning and deep learning; familiar with C and Swift."
+
+[[skills]]
+title = "Molecular Modeling"
+description = "OpenMM, ChimeraX, PyMOL, and their APIs."
+
+[[skills]]
+title = "Wet Lab Techniques"
+description = "SELEX, PCR, gel electrophoresis, microscopy, cell transformation, plasmid extraction, cell fractionation, and cell culture; familiar with mouse autopsy and Western blot."
+
+[[skills]]
+title = "Web & App Development"
+description = "HTML, CSS, JavaScript, Flask, and Chrome extensions; familiar with iOS development in Swift."
+
+[[skills]]
+title = "Systems & Infrastructure"
+description = "Linux (Debian and Arch), Docker, Proxmox VE, KVM/QEMU, and VirtualBox."
+
+[[skills]]
+title = "Version Control & Documentation"
+description = "Git, Markdown, LaTeX, and Typst."
+
+[[service]]
+dates = "Sep 2023–Sep 2024"
+title = "Founding Member & Deputy Head"
+organization = "Bioinformatics Association, CUHK-Shenzhen"
+description = "Organized events with partner associations and hosted an academic seminar on ADHD."
+
+[[service]]
+dates = "Sep 2022–Sep 2023"
+title = "Head of the Planning Department"
+organization = "Biomedical Engineering Association, CUHK-Shenzhen"
+description = "Planned and coordinated student events and collaborations."

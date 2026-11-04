@@ -14,6 +14,15 @@ hugo
 
 ## Adding Content
 
+### CV and Experience
+
+Edit `data/cv.toml` to update education, research and work experience, computing
+allocations, teaching, honors, skills, and service. The homepage renders these
+sections with `layouts/partials/cv-section.html`.
+
+The CV link serves `static/resume.pdf`. Keep it and the matching copy at
+`assets/resume.pdf` in sync with the full CV.
+
 ### Publications
 
 Edit `assets/MyPub.bib` in standard BibTeX format:
