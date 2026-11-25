@@ -1,4 +1,4 @@
-# Content adapted from the long CV, cv_banking_full_original.tex.
+# Content synchronized with cv_banking.tex.
 
 [[education]]
 dates = "Aug 2025–Present"
@@ -19,6 +19,11 @@ organization = "University of North Carolina at Chapel Hill"
 dates = "Aug 2025–Present"
 title = "Research Assistantship · Protein–DNA Interactions"
 organization = "Andrew Leakey & Diwakar Shukla groups, University of Illinois Urbana-Champaign"
+details = [
+  "Developing machine learning models to predict protein–DNA interactions and guide protein engineering.",
+  "Combining computational protein design and molecular simulation to engineer WRI1 variants for increased lipid production in bioenergy crops.",
+  "Developing strategies to engineer stomatal signaling peptides for improved crop water-use efficiency."
+]
 
 [[research]]
 dates = "Jun 2025–Aug 2025"
@@ -46,14 +51,28 @@ title = "Research Internship · Traditional Chinese Medicine Database"
 organization = "Hsien-Da Huang group, CUHK-Shenzhen"
 
 [[funding]]
-dates = "2026"
+dates = "Nov 2026–Present"
+title = "Fast Prediction of Protein–DNA Contacts with Protein Language Models"
+organization = "NAIRR Start-Up Allocation · NAIRR260578"
+description = "Principal Investigator"
+
+[[funding]]
+dates = "Nov 2026–Present"
 title = "Fast Protein–DNA Contact Predictors for Plant Gene Regulation"
 organization = "ACCESS-CI Explore Allocation · BIO260641"
 description = "Principal Investigator"
 
+[[presentations]]
+dates = "January 2027"
+title = "AI-Guided Design and Enhanced-Sampling MD to Engineer WRINKLED1 for Plant Lipid Production"
+organization = "Gordon Research Conference on Plant Lipids: Structure, Metabolism and Function · Oxnard, CA, USA"
+description = "Zhou, Y., et al. Selected Oral Presentation (scheduled)."
+
 [[teaching]]
+dates = "Jul 2026"
 title = "Tutorial Instructor · CURIE Camp"
 organization = "University of Illinois Urbana-Champaign"
+description = "Led tutorials to introduce high-school students to protein folding through Foldit."
 link = "https://wyse.grainger.illinois.edu/summer-programs/summer-camps/curie-camp"
 link_label = "CURIE Camp"
 
@@ -87,6 +106,10 @@ title = "Student Help Room Preceptor"
 organization = "CUHK-Shenzhen"
 
 [[honors]]
+dates = "2026"
+description = "Second Place, Precision & Digital Agriculture Hackathon, Plant & Controlled Environment Systems track, UIUC"
+
+[[honors]]
 dates = "2025"
 description = "iGEM Gold Medal, undergraduate track, as secondary PI"
 
@@ -116,7 +139,7 @@ description = "Dean’s List for three consecutive academic years, School of Med
 
 [[honors]]
 dates = "2019"
-description = "Innovative Award, Mobile Application Innovation Contest, Apple"
+description = "Innovative Award, Mobile Application Innovation Contest (K–12 Session), Apple"
 
 [[skills]]
 title = "Programming & Data Analysis"
